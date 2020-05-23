@@ -16,11 +16,11 @@ easy_admin:
             - { property: 'email', type: 'email' }
             - { property: 'createdAt', type: 'datetime' }
           sort: [ 'createdAt', 'ASC' ]
-          filter: [ 'conference' ]
+          filters: [ 'conference' ]
         edit:
           fields:
             - { property: 'conference' }
-            - { property: 'createdAt', type: datetime, type_options: {attr: {readonly: true}}}
+            - { property: 'createdAt', type: datetime, type_options: { attr: { readonly: true }, disabled: true } }
             - 'author'
             - { property: 'email', type: 'email' }
             - text
