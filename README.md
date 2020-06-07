@@ -20,3 +20,20 @@ https://symfony.com/doc/master/cloud/troubleshooting.html
 
 https://github.com/aik099/PhpStormProtocol
 
+## Symfony cloud troubleshooting
+
+https://symfony.com/doc/master/cloud/troubleshooting.html
+
+## Change chromedriver binary used by Panther
+
+https://www.christophe-meneses.fr/article/erreur-lors-de-la-mise-a-jour-de-panther-facebook-webdriver-exception-sessionnotcreatedexception-session-not-created-this-version-of-chromedriver-only-supports-chrome-version-x
+
+Add following lines to .bashrc file :
+```
+export PANTHER_CHROME_DRIVER_BINARY=/usr/bin/chromedriver
+export PANTHER_CHROME_BINARY=/usr/bin/google-chrome
+```
+Then reload with
+```
+source ~/.bashrc
+```

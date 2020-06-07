@@ -29,6 +29,7 @@
 
     <extensions>
         <extension class="DAMA\DoctrineTestBundle\PHPUnit\PHPUnitExtension"></extension>
+        <extension class="Symfony\Component\Panther\ServerExtension"></extension>
     </extensions>
 
     <listeners>
