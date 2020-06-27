@@ -11,6 +11,7 @@ runtime:
         - iconv
         - pdo_pgsql
         - redis
+        - amqp
 
 build:
     flavor: none
@@ -43,4 +44,5 @@ hooks:
 relationships:
     database: "db:postgresql"
     redis: "rediscache:redis"
+    rabbitmq: "queue:rabbitmq"
 
